@@ -1,0 +1,229 @@
+## File Structure Overview for RClone WebUI React
+
+- CRA.md
+- screenshots 
+    - Contains the screenshots required in the various documentation pages.
+- Utils
+    - Utilities for various unrelated tasks in the development.
+    - Utils/index.js
+        - Default Exports for utils
+- README.md
+- ISSUE_TEMPLATE.md
+    - Issue template to be used to create a new issue. Automatically picked up by GitHub.
+- .travis.yml
+    - Travis.yml files for settings related to continuous integration using [Travis CI](https://travis-ci.org).
+    - If you want to configure your fork with travis ci, please refer to the guide [Setup travis CI](./integrate-travis-ci.md).
+- LICENSE
+    - Licensing of this product and other details.
+- package.json
+    - Packages file for Node Package manager.
+- CHANGELOG.md
+- src
+    - Source files directory
+- src/index.css
+- src/store.js
+- src/reducers
+    - All redux reducers for the app.
+- src/assets
+    - Images, brand logos etc.
+- src/scss
+    - Place to put your SCSS stylesheets. Automatically compiled by SCSS compiler.
+- src/scss/style.scss
+    - Main stylesheet to import other themes and other global styles.
+- src/scss/_variables.scss
+    - Default variables override goes here.
+- src/scss/_ie-fix.scss
+    - Parameters for fixing Internet Explorer (IE) specific problems.
+- src/scss/vendors
+    - Contains 3rd party SCSS files.
+- src/scss/vendors/_variables.scss
+    - Third party SCSS variables.
+- src/scss/vendor./src/scss/_custom.scss
+    - This is where your styles should go.
+- src/routes.js
+    - App routes. This is passed to the hash router which handles URLs and loads the desired component.
+- src/serviceWorker.js
+    - Registers or unregisters service workers for the web app.
+- src/App.test.js
+    - App level test file for shallow testing.
+- src/throttled.js
+    - Provides functionality to throttle redux requests.
+    - Provides middle ware added to redux and responds on meta in the request.
+- src/_nav.js
+    - Setup the side nav bar. 
+    - If you want to add anything to the side-nav, add it to this file.
+- src/App.scss
+    - Imports 3rd party plugins and stylesheets.
+- src/components
+    - Contains React components in the application.
+- src/index.js
+    - Main File for App Content. Loads App and Provider context for redux.
+- src/actions
+    - Redux actions for different components
+- src/App.js
+    - Loads navbar, hash router, top components.
+- src/containers
+    - Containers are URL addressable components.
+- src/containers/DefaultLayout
+    - Default layout for the Single page application. Every component is rendered inside this component.
+- src/containers/DefaultLayout/DefaultFooter.js
+    - Contains default footer layout for the application.
+- src/containers/DefaultLayout/__tests__
+    - Tests for default layout.
+- src/containers/DefaultLayout/DefaultHeader.js
+    - Header component to be loaded on every page.
+- src/containers/DefaultLayout/DefaultLayout.js
+    - Component for Default Layout.
+- src/containers/DefaultLayout/DefaultAside.js
+    - Default component for aside.
+- src/exceptions
+    - Exceptions classes to be thrown are stored here.
+- src/exceptions/DefaultException.js
+    - Default exception for any error.
+- src/views
+    - Components to view in 
+- src/views/Pages
+    - Static pages for errors, login, register.
+- src/views/Pages/Page500
+    - Error page to be loaded on HTTP Error 500.
+- src/views/Pages/Page404
+    - Error page to be loaded on HTTP Error 404.
+- src/views/Pages/Login
+    - Component to handle the login flow.
+- src/views/Explorer
+    - Different components in the RemoteExplorer.
+- src/views/Explorer/RemoteExplorerLayout
+    - Main Layout in remote explorer which contains all RemoteExplorers.
+    - Handles distraction free mode, change layouts.
+- src/views/Explorer/RemoteExplorer
+    - Component to map individual remote on the screen.
+- src/views/Explorer/RemotesList
+    - Component to display remotes to select from.
+- src/views/Explorer/RemotesList/RemoteListAutoSuggest.js
+    - Auto suggest component with relevant suggestions for the typed query.
+- src/views/Explorer/FilesView
+    - Displays the actual list of files in a remote.
+    - Can operate in card mode or table mode. 
+- src/views/Explorer/FilesView/Constants.js
+    - Contains all global constants used in the file.
+- src/views/Explorer/FilesView/FileComponent.js
+- src/views/Explorer/FilesView/FilesComponent.test.js
+- src/views/Home
+- src/views/Home/Home.js
+- src/views/Home/__snapshots__
+- src/views/Home/__snapshots__/Home.test.js.snap
+- src/views/Home/package.json
+- src/views/Home/Home.test.js
+- src/views/RemoteManagement
+- src/views/RemoteManagement/NewDrive
+- src/views/RemoteManagement/NewDrive/config.js
+- src/views/RemoteManagement/NewDrive/__snapshots__
+- src/views/RemoteManagement/NewDrive/__snapshots__/NewDrive.test.js.snap
+- src/views/RemoteManagement/NewDrive/NewDrive.js
+- src/views/RemoteManagement/NewDrive/package.json
+- src/views/RemoteManagement/NewDrive/NewDrive.test.js
+- src/views/RemoteManagement/NewDrive/ProviderAutoSuggest.js
+- src/views/RemoteManagement/ShowConfig
+- src/views/RemoteManagement/ShowConfig/ConfigRow.test.js
+- src/views/RemoteManagement/ShowConfig/ShowConfig.test.js
+- src/views/RemoteManagement/ShowConfig/__snapshots__
+- src/views/RemoteManagement/ShowConfig/__snapshots__/ConfigRow.test.js.snap
+- src/views/RemoteManagement/ShowConfig/__snapshots__/ShowConfig.test.js.snap
+- src/views/RemoteManagement/ShowConfig/package.json
+- src/views/RemoteManagement/ShowConfig/ConfigRow.js
+- src/views/RemoteManagement/ShowConfig/ShowConfig.js
+- src/views/index.js
+- src/views/RCloneDashboard
+- src/views/RCloneDashboard/RCloneDashboard.js
+- src/views/RCloneDashboard/__snapshots__
+- src/views/RCloneDashboard/package.json
+- src/views/RCloneDashboard/RcloneDashboard.test.js
+- src/views/VideoPlayer
+- src/views/VideoPlayer/VideoPlayer.test.js
+- src/views/VideoPlayer/VideoPlayer.js
+- src/views/VideoPlayer/__snapshots__
+- src/views/VideoPlayer/__snapshots__/VideoPlayer.test.js.snap
+- src/views/Base
+- src/views/Base/ScrollableDiv
+- src/views/Base/ScrollableDiv/__snapshots__
+- src/views/Base/ScrollableDiv/__snapshots__/ScrollableDiv.test.js.snap
+- src/views/Base/ScrollableDiv/ScrollableDiv.test.js
+- src/views/Base/ScrollableDiv/ScrollableDiv.js
+- src/views/Base/Widgets
+- src/views/Base/Widgets/BandwidthWidget.js
+- src/views/Base/RunningJobs
+- src/views/Base/RunningJobs/RunningJobs.test.js
+- src/views/Base/RunningJobs/__snapshots__
+- src/views/Base/RunningJobs/__snapshots__/RunningJobs.test.js.snap
+- src/views/Base/RunningJobs/package.json
+- src/views/Base/RunningJobs/RunningJobs.js
+- src/views/Base/MediaWidget
+- src/views/Base/MediaWidget/MediaWidget.js
+- src/views/Base/MediaWidget/__snapshots__
+- src/views/Base/MediaWidget/__snapshots__/MediaWidget.test.js.snap
+- src/views/Base/MediaWidget/MediaWidget.test.js
+- src/views/Base/FileOperations
+- src/views/Base/FileOperations/__snapshots__
+- src/views/Base/FileOperations/__snapshots__/FileOperations.test.js.snap
+- src/views/Base/FileOperations/FileOperations.test.js
+- src/views/Base/FileOperations/FileOperations.js
+- src/views/Base/ImageLoader
+- src/views/Base/ImageLoader/ImageLoader.test.js
+- src/views/Base/ImageLoader/ImageLoader.js
+- src/views/Base/ImageLoader/__snapshots__
+- src/views/Base/ImageLoader/__snapshots__/ImageLoader.test.js.snap
+- src/views/Base/NewDriveAuthModal
+- src/views/Base/NewDriveAuthModal/NewDriveAuthModal.js
+- src/views/Base/NewDriveAuthModal/NewDriveAuthModal.test.js
+- src/views/Base/NewDriveAuthModal/__snapshots__
+- src/views/Base/NewDriveAuthModal/__snapshots__/NewDriveAuthModal.test.js.snap
+- src/views/Base/NewDriveAuthModal/package.json
+- src/views/Base/BandwidthStatusCard
+- src/views/Base/BandwidthStatusCard/BandwidthStatusCard.js
+- src/views/Base/BandwidthStatusCard/BandwidthStatusCard.test.js
+- src/views/Base/BandwidthStatusCard/__snapshots__
+- src/views/Base/BandwidthStatusCard/__snapshots__/BandwidthStatusCard.test.js.snap
+- src/views/Base/BackendStatusCard
+- src/views/Base/BackendStatusCard/BackendStatusCard.js
+- src/views/Base/BackendStatusCard/__snapshots__
+- src/views/Base/BackendStatusCard/__snapshots__/BackendStatusCard.test.js.snap
+- src/views/Base/BackendStatusCard/BackendStatusCard.test.js
+- src/views/Base/LinkShareModal
+- src/views/Base/LinkShareModal/__snapshots__
+- src/views/Base/LinkShareModal/__snapshots__/LinkShareModal.test.js.snap
+- src/views/Base/LinkShareModal/LinkShareModal.js
+- src/views/Base/LinkShareModal/LinkShareModal.test.js
+- src/views/Base/NewFolder
+- src/views/Base/NewFolder/NewFolder.test.js
+- src/views/Base/NewFolder/__snapshots__
+- src/views/Base/NewFolder/__snapshots__/NewFolder.test.js.snap
+- src/views/Base/NewFolder/NewFolder.js
+- src/utils
+- src/utils/StateLoader.test.js
+- src/utils/API
+- src/utils/API/API.test.js
+- src/utils/API/API.js
+- src/utils/testData.js
+- src/utils/classes
+- src/utils/classes/BackStack.js
+- src/utils/classes/BackStack.test.js
+- src/utils/classes/Stack.js
+- src/utils/classes/Stack.test.js
+- src/utils/Tools.js
+- src/utils/Constants.js
+- src/utils/Tools.test.js
+- src/utils/RclonePropTypes.js
+- src/utils/StateLoader.js
+- greenkeeper.json
+- REACT.md
+- cat
+- package-lock.json
+- CONTRIBUTING.md
+- public
+- public/favicon.ico
+- public/assets
+- public/assets/img
+- public/assets/img/favicon.png
+- public/assets/img/avatars
+- public/asset./public/index.html
+- public/manifest.json
