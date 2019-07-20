@@ -107,118 +107,79 @@
 - src/views/Explorer/FilesView/Constants.js
     - Contains all global constants used in the file.
 - src/views/Explorer/FilesView/FileComponent.js
-- src/views/Explorer/FilesView/FilesComponent.test.js
+    - Contains component of independent files in the file explorer.
+    - Can operate in two modes: Grid Mode, Table Mode.
+    - Can Contains Widget in the card mode. 
 - src/views/Home
-- src/views/Home/Home.js
-- src/views/Home/__snapshots__
-- src/views/Home/__snapshots__/Home.test.js.snap
-- src/views/Home/package.json
-- src/views/Home/Home.test.js
+    - Home page component.
 - src/views/RemoteManagement
+    - Contains files for Creating and managing remotes.
 - src/views/RemoteManagement/NewDrive
+    - Component to handle the creation of a new Remote.
 - src/views/RemoteManagement/NewDrive/config.js
-- src/views/RemoteManagement/NewDrive/__snapshots__
-- src/views/RemoteManagement/NewDrive/__snapshots__/NewDrive.test.js.snap
-- src/views/RemoteManagement/NewDrive/NewDrive.js
-- src/views/RemoteManagement/NewDrive/package.json
-- src/views/RemoteManagement/NewDrive/NewDrive.test.js
+    - Contains default config for Providers supported by Rclone.
 - src/views/RemoteManagement/NewDrive/ProviderAutoSuggest.js
+    - Autosuggest handler for creating a new drive.
 - src/views/RemoteManagement/ShowConfig
-- src/views/RemoteManagement/ShowConfig/ConfigRow.test.js
-- src/views/RemoteManagement/ShowConfig/ShowConfig.test.js
-- src/views/RemoteManagement/ShowConfig/__snapshots__
-- src/views/RemoteManagement/ShowConfig/__snapshots__/ConfigRow.test.js.snap
-- src/views/RemoteManagement/ShowConfig/__snapshots__/ShowConfig.test.js.snap
-- src/views/RemoteManagement/ShowConfig/package.json
+    - Shows config for currently configured remote.    
 - src/views/RemoteManagement/ShowConfig/ConfigRow.js
-- src/views/RemoteManagement/ShowConfig/ShowConfig.js
-- src/views/index.js
+    - Component denoting a single row in the ShowConfig page.
 - src/views/RCloneDashboard
-- src/views/RCloneDashboard/RCloneDashboard.js
-- src/views/RCloneDashboard/__snapshots__
-- src/views/RCloneDashboard/package.json
-- src/views/RCloneDashboard/RcloneDashboard.test.js
+    - Component for the main Rclone dashboard.
 - src/views/VideoPlayer
-- src/views/VideoPlayer/VideoPlayer.test.js
-- src/views/VideoPlayer/VideoPlayer.js
-- src/views/VideoPlayer/__snapshots__
-- src/views/VideoPlayer/__snapshots__/VideoPlayer.test.js.snap
+    - Component which allows videos to be streamed in the browser.
 - src/views/Base
+    - Directory to place independent components.
 - src/views/Base/ScrollableDiv
-- src/views/Base/ScrollableDiv/__snapshots__
-- src/views/Base/ScrollableDiv/__snapshots__/ScrollableDiv.test.js.snap
-- src/views/Base/ScrollableDiv/ScrollableDiv.test.js
-- src/views/Base/ScrollableDiv/ScrollableDiv.js
+    - A Component with fixed height and vertically scrollable.
 - src/views/Base/Widgets
+    - Home to place new widgets.
 - src/views/Base/Widgets/BandwidthWidget.js
+    - Shows the current bandwidth in the navbar and also the home widget box.
 - src/views/Base/RunningJobs
-- src/views/Base/RunningJobs/RunningJobs.test.js
-- src/views/Base/RunningJobs/__snapshots__
-- src/views/Base/RunningJobs/__snapshots__/RunningJobs.test.js.snap
-- src/views/Base/RunningJobs/package.json
-- src/views/Base/RunningJobs/RunningJobs.js
+    - Renders currently running in a floating modal.
 - src/views/Base/MediaWidget
-- src/views/Base/MediaWidget/MediaWidget.js
-- src/views/Base/MediaWidget/__snapshots__
-- src/views/Base/MediaWidget/__snapshots__/MediaWidget.test.js.snap
-- src/views/Base/MediaWidget/MediaWidget.test.js
+    - Widgets which can interact with the individual files.
 - src/views/Base/FileOperations
-- src/views/Base/FileOperations/__snapshots__
-- src/views/Base/FileOperations/__snapshots__/FileOperations.test.js.snap
-- src/views/Base/FileOperations/FileOperations.test.js
-- src/views/Base/FileOperations/FileOperations.js
+    - Operations to be performed on the files/ directories.
 - src/views/Base/ImageLoader
-- src/views/Base/ImageLoader/ImageLoader.test.js
-- src/views/Base/ImageLoader/ImageLoader.js
-- src/views/Base/ImageLoader/__snapshots__
-- src/views/Base/ImageLoader/__snapshots__/ImageLoader.test.js.snap
+    - Loads and displays images.
 - src/views/Base/NewDriveAuthModal
-- src/views/Base/NewDriveAuthModal/NewDriveAuthModal.js
-- src/views/Base/NewDriveAuthModal/NewDriveAuthModal.test.js
-- src/views/Base/NewDriveAuthModal/__snapshots__
-- src/views/Base/NewDriveAuthModal/__snapshots__/NewDriveAuthModal.test.js.snap
-- src/views/Base/NewDriveAuthModal/package.json
+    - Used to show progress modal before receiving confirmation from rclone about the remote creation.
 - src/views/Base/BandwidthStatusCard
-- src/views/Base/BandwidthStatusCard/BandwidthStatusCard.js
-- src/views/Base/BandwidthStatusCard/BandwidthStatusCard.test.js
-- src/views/Base/BandwidthStatusCard/__snapshots__
-- src/views/Base/BandwidthStatusCard/__snapshots__/BandwidthStatusCard.test.js.snap
+    - Current bandwidth and change bandwidth.
 - src/views/Base/BackendStatusCard
-- src/views/Base/BackendStatusCard/BackendStatusCard.js
-- src/views/Base/BackendStatusCard/__snapshots__
-- src/views/Base/BackendStatusCard/__snapshots__/BackendStatusCard.test.js.snap
-- src/views/Base/BackendStatusCard/BackendStatusCard.test.js
+    - Displays the status of backend, connected, disabled, disconnected.
 - src/views/Base/LinkShareModal
-- src/views/Base/LinkShareModal/__snapshots__
-- src/views/Base/LinkShareModal/__snapshots__/LinkShareModal.test.js.snap
-- src/views/Base/LinkShareModal/LinkShareModal.js
-- src/views/Base/LinkShareModal/LinkShareModal.test.js
+    - Modal to facilitate sharing of links for supported remotes.
 - src/views/Base/NewFolder
-- src/views/Base/NewFolder/NewFolder.test.js
-- src/views/Base/NewFolder/__snapshots__
-- src/views/Base/NewFolder/__snapshots__/NewFolder.test.js.snap
-- src/views/Base/NewFolder/NewFolder.js
+    - Modal to support creation of new folders.
 - src/utils
+    - Extra utils to support the validations, common functionality.
 - src/utils/StateLoader.test.js
+    - Redux state loader loads the state from the localStorage.
 - src/utils/API
-- src/utils/API/API.test.js
-- src/utils/API/API.js
+    - API components to interact with the Rclone backend.
 - src/utils/testData.js
+    - Test data to be used for loading components.
 - src/utils/classes
+    - Supporting data structure classes.
 - src/utils/classes/BackStack.js
-- src/utils/classes/BackStack.test.js
+    - Dual stack implementation for handling forward and backward capability of the rclone files view.
 - src/utils/classes/Stack.js
-- src/utils/classes/Stack.test.js
+    - A simple javascript array stack implementation.
 - src/utils/Tools.js
+    - Set of conversion logic functions.
 - src/utils/Constants.js
-- src/utils/Tools.test.js
+    - Global constants.
 - src/utils/RclonePropTypes.js
-- src/utils/StateLoader.js
+    - Widely used proptypes throughout the components.
 - greenkeeper.json
+    - Configuration file for dependency manager greenkeeper.
 - REACT.md
-- cat
+    - React specific configuration help page.
 - package-lock.json
-- CONTRIBUTING.md
+    - File with locked dependencies.
 - public
 - public/favicon.ico
 - public/assets

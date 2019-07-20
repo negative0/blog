@@ -9,10 +9,12 @@ layout: default
 ### Articles
 
 **RClone Web UI react**
+
 - [Project URL](https://github.com/negative0/rclone-webui-react)
 - [Google Summer of Code '19 Phase I](./gsoc-phase-i.md)
 - [Creating a new widget for Rclone Files View](./new-widget.md)
 - [Rclone WebUI File Structure](./file-structure.md)
+
 ### A little about me
 
 As of 2019, I am a final year B.E. Student at Pune Institute of Computer Technology. Enthusiastic about technology and it's future. 
